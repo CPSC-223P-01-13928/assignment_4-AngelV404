@@ -19,14 +19,14 @@ while (True):
         weather = read_data(filename = myfile)
     elif mychoice == 2:
         dt = input ("Enter date: ")
-        tm = input ("Enter time:")
-        t = int (input ("Enter Temperature: "))
+        tm = input ("Enter time: ")
+        t = int (input ("Enter temperature: "))
         h = int (input("Enter humidity: "))
         r = float(input("Enter rainfall: "))
         weather [dt+tm] = {'t': t, 'h':h, 'r':r}
         write_data(data = weather, filename = myfile)
     elif mychoice == 3:
-        d = input ("Enter date:")
+        d = input ("Enter date: ")
         display = report_daily(data = weather, date = d)
         print (display)
     elif mychoice == 4:
